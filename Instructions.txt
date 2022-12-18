@@ -1,0 +1,36 @@
+СЮДА БУДУ ПИСАТЬ ЧТО НАДО СДЕЛАТЬ
+
+!Установка venv
+Зайди в настройки Pycharm
+Путь: Pycharm -> Preferences -> Project -> Python Interpreter -> + (add) -> search -> "virtualenv" -> install package
+
+!Добавление в проект venv
+1 Открой терминал
+2 Вбей в терминале: python -m venv venv
+
+!Активация venv
+1 Открой терминал
+2 Вбей в терминале: source venv/bin/activate
+
+!Отключение venv
+1 Терминал открыт и (Если в терминале отображается (venv) значит он активирован)
+2 Вбей в терминале: deactivate
+
+!Установка библиотеки pytest
+1 Открой терминал
+2 Активируй venv
+3 Вбей в терминале: pip install pytest
+4 Проверь pytest командой: pytest  (должен отобразиться вывод в терминале что тестов нет)
+
+!Фиксация версий библиотек в проекте
+1 Добавь файл requirements.txt в корне проекта
+2 Добавь туда строку pytest==7.2.0
+
+!Установка необходимых зависимостей в проект
+1 Открой терминал
+2 Активируй venv
+3 Вбей в терминале: pip install -r requirements.txt
+
+!Использование версии питон
+1 Зайди в настройки Pycharm
+2 Путь: Pycharm -> Preferences -> Project -> Python Interpreter -> раскрой список python ->  showAll -> выбери из папки venv
